@@ -1,0 +1,35 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+   <rect x="0" y="0" width="900" height="600" fill="transparent"></rect>
+   <defs>
+      <linearGradient id="grad1_0" x1="33.3%" y1="0%" x2="100%" y2="100%">
+         <stop offset="20%" stop-color="#ddd" stop-opacity="1"></stop>
+         <stop offset="80%" stop-color="#ddd" stop-opacity="1"></stop>
+      </linearGradient>
+   </defs>
+   <defs>
+      <linearGradient id="grad1_1" x1="33.3%" y1="0%" x2="100%" y2="100%">
+         <stop offset="20%" stop-color="#ddd" stop-opacity="1"></stop>
+         <stop offset="80%" stop-color="#ffffff" stop-opacity="1"></stop>
+      </linearGradient>
+   </defs>
+   <defs>
+      <linearGradient id="grad2_0" x1="0%" y1="0%" x2="66.7%" y2="100%">
+         <stop offset="20%" stop-color="#ddd" stop-opacity="1"></stop>
+         <stop offset="80%" stop-color="#ddd" stop-opacity="1"></stop>
+      </linearGradient>
+   </defs>
+   <defs>
+      <linearGradient id="grad2_1" x1="0%" y1="0%" x2="66.7%" y2="100%">
+         <stop offset="20%" stop-color="#ffffff" stop-opacity="1"></stop>
+         <stop offset="80%" stop-color="#ddd" stop-opacity="1"></stop>
+      </linearGradient>
+   </defs>
+   <g transform="translate(900, 0)">
+      <path d="M0 216.3C-41.1 212.6 -82.3 208.8 -108.2 187.3C-134.1 165.9 -144.7 126.7 -160.2 92.5C-175.7 58.3 -196 29.2 -216.3 0L0 0Z" fill="#f2f2f2"></path>
+      <path d="M0 108.2C-20.6 106.3 -41.1 104.4 -54.1 93.7C-67 82.9 -72.4 63.3 -80.1 46.3C-87.9 29.2 -98 14.6 -108.2 0L0 0Z" fill="#ddd"></path>
+   </g>
+   <g transform="translate(0, 600)">
+      <path d="M0 -216.3C41.5 -212.8 83 -209.2 108.2 -187.3C133.4 -165.5 142.3 -125.3 157.6 -91C172.9 -56.7 194.6 -28.4 216.3 0L0 0Z" fill="#f2f2f2"></path>
+      <path d="M0 -108.2C20.7 -106.4 41.5 -104.6 54.1 -93.7C66.7 -82.7 71.2 -62.6 78.8 -45.5C86.5 -28.4 97.3 -14.2 108.2 0L0 0Z" fill="#ddd"></path>
+   </g>
+</svg>

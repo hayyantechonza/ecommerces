@@ -1,0 +1,58 @@
+/* Raleway */
+
+@font-face {
+    font-family: ral_sBold;
+    src: url("../fonts/Raleway/semibold.ttf");
+}
+
+@font-face {
+    font-family: ral_regular;
+    src: url("../fonts/Raleway/regular.ttf");
+}
+
+@font-face {
+    font-family: ral_medium;
+    src: url("../fonts/Raleway/medium.ttf");
+}
+
+@font-face {
+    font-family: ral_bold;
+    src: url("../fonts/Raleway/bold.ttf");
+}
+
+@font-face {
+    font-family: ral_extraBold;
+    src: url("../fonts/Raleway/extraBold.ttf");
+}
+
+@font-face {
+    font-family: ral_black;
+    src: url("../fonts/Raleway/black.ttf");
+}
+
+/* Open Sans */
+
+@font-face {
+    font-family: oSans_sBold;
+    src: url("../fonts/opensans/semibold.ttf");
+}
+
+@font-face {
+    font-family: oSans_regular;
+    src: url("../fonts/opensans/regular.ttf");
+}
+
+@font-face {
+    font-family: oSans_medium;
+    src: url("../fonts/opensans/medium.ttf");
+}
+
+@font-face {
+    font-family: oSans_bold;
+    src: url("../fonts/opensans/bold.ttf");
+}
+
+@font-face {
+    font-family: oSans_extraBold;
+    src: url("../fonts/opensans/extraBold.ttf");
+}

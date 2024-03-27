@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ubone - Furniture Store</title>
+  <link rel="icon" type="image/x-icon" href="./images/logos/favicon.png">
+  <link rel="stylesheet" href="./icons/tabler-icons.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <!-- add to cart canvas -->
+  <div class="offcanvas offcanvas-end" id="addtocart">
+    <div class="offcanvas-header">
+      <h4>Shopping Cart</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="addtocart_product">
+        <figure class="addtocart_product_img">
+          <img src="./images/products/product_1.webp" alt="Wooden Dining Table">
+        </figure>
+        <div class="addtocart_product_content">
+          <h5 class="addtocart_product_title">Wooden Dining Table</h5>
+          <p class="addtocart_product_text">$49.99</p>
+          <p class="addtocart_product_text">qty: 5</p>
+        </div>
+        <button type="button" class="btn">
+          <i class="ti ti-trash"></i>
+        </button>
+      </div>
+      <div class="addtocart_product">
+        <figure class="addtocart_product_img">
+          <img src="./images/products/product_2.webp" alt="Leather Sofa">
+        </figure>
+        <div class="addtocart_product_content">
+          <h5 class="addtocart_product_title">Leather Sofa</h5>
+          <p class="addtocart_product_text">$59.99</p>
+          <p class="addtocart_product_text">qty: 5</p>
+        </div>
+        <button type="button" class="btn">
+          <i class="ti ti-trash"></i>
+        </button>
+      </div>
+      <div class="addtocart_product">
+        <figure class="addtocart_product_img">
+          <img src="./images/products/product_3.webp" alt="Bedside Table">
+        </figure>
+        <div class="addtocart_product_content">
+          <h5 class="addtocart_product_title">Bedside Table</h5>
+          <p class="addtocart_product_text">$69.99</p>
+          <p class="addtocart_product_text">qty: 5</p>
+        </div>
+        <button type="button" class="btn">
+          <i class="ti ti-trash"></i>
+        </button>
+      </div>
+      <div class="addtocart_product">
+        <figure class="addtocart_product_img">
+          <img src="./images/products/product_4.webp" alt="Comfortable Chair">
+        </figure>
+        <div class="addtocart_product_content">
+          <h5 class="addtocart_product_title">Comfortable Chair</h5>
+          <p class="addtocart_product_text">$79.99</p>
+          <p class="addtocart_product_text">qty: 5</p>
+        </div>
+        <button type="button" class="btn">
+          <i class="ti ti-trash"></i>
+        </button>
+      </div>
+      <div class="addtocart_product">
+        <figure class="addtocart_product_img">
+          <img src="./images/products/product_5.webp" alt="Bookshelf">
+        </figure>
+        <div class="addtocart_product_content">
+          <h5 class="addtocart_product_title">Bookshelf</h5>
+          <p class="addtocart_product_text">$89.99</p>
+          <p class="addtocart_product_text">qty: 5</p>
+        </div>
+        <button type="button" class="btn">
+          <i class="ti ti-trash"></i>
+        </button>
+      </div>
+    </div>
+    <div class="offcanvas-footer">
+      <a href="#" class="button">
+        <span>Checkout</span>
+      </a>
+      <a href="#" class="viewall_cart">
+        <span>View all cart</span>
+      </a>
+    </div>
+  </div>
+  <!-- end of add to cart canvas -->
+  <!-- banner -->
+  <div class="banner hide">
+    <div class="container">
+      <div class="banner_main">
+        <h5>60 months</h5>
+        <p>Interest free financing</p>
+        <a href="#">See if you prequalify</a>
+      </div>
+    </div>
+    <i class="ti ti-x"></i>
+  </div>
+  <!-- end of banner -->
+  <!-- header -->
+  <header>
+    <div class="header_top">
+      <div class="container">
+        <div class="header_top_container">
+          <a href="index.html" class="logo">
+            <img src="images/logos/logo.svg" alt="Logo">
+          </a>
+          <form class="search">
+            <div class="search_box">
+              <input class="search_input" type="search" placeholder="Search products">
+              <i class="ti ti-search"></i>
+            </div>
+            <div class="search_keywords">
+              <a href="#" class="keyword">Apple</a>
+              <a href="#" class="keyword">Microwave</a>
+              <a href="#" class="keyword">iPhone14</a>
+              <a href="#" class="keyword">Smartwatch</a>
+              <a href="#" class="keyword">Macbook Pro</a>
+            </div>
+            <div class="search_result">
+              <button class="search_result_close">
+                <i class="ti ti-x"></i>
+              </button>
+              <div class="container">
+                <div class="search_keywords_wrapper">
+                  <h4>Search keywords: <span></span></h4>
+                  <div class="search_keywords">
+                    <a href="#" class="keyword">Apple</a>
+                    <a href="#" class="keyword">Microwave</a>
+                    <a href="#" class="keyword">iPhone14</a>
+                    <a href="#" class="keyword">Smartwatch</a>
+                    <a href="#" class="keyword">Macbook Pro</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="header_icons">
+            <button class="header_icon search_icon">
+              <i class="ti ti-search"></i>
+            </button>
+            <button class="header_icon login">
+              <i class="ti ti-user"></i>
+            </button>
+            <button class="header_icon" data-value="0">
+              <i class="ti ti-heart"></i>
+            </button>
+            <button class="header_icon" data-value="0" data-bs-toggle="offcanvas" data-bs-target="#addtocart">
+              <i class="ti ti-shopping-bag"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom">
+      <div class="container">
+        <div class="header_bottom_container">
+          <button class="button menu_btn">
+            <i class="ti ti-menu-2"></i>
+          </button>
+          <nav class="navbar">
+            <ul class="menu">
+              <li><a href="#">living rooms</a></li>
+              <li><a href="#">dining rooms</a></li>
+              <li><a href="#">bedrooms</a></li>
+              <li><a href="#">mattress</a></li>
+              <li><a href="#">patio</a></li>
+              <li><a href="#">kids & teens</a></li>
+              <li><a href="#">rugs & decor</a></li>
+            </ul>
+          </nav>
+          <button class="button sale_button">
+            <i class="ti ti-rosette-discount"></i>
+            <span>best Sale</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end of header -->
+  <main>
+    <!-- hero -->
+    <section class="hero no_p">
+      <div class="hero_slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure class="hero_slide_img">
+              <img src="images/banners/banner_5.webp" alt="Furniture Banner 1">
+            </figure>
+            <div class="hero_slide">
+              <div class="container">
+                <div class="hero_content">
+                  <hgroup>
+                    <h1 class="hero_banner_title">New Sheesham Furniture!</h1>
+                    <p class="hero_banner_desc">Get your hands on new sheesham furniture sets, order now!</p>
+                  </hgroup>
+                  <a href="#" class="banner_cta button">
+                    <span>Shop Now</span>
+                    <i class="ti ti-arrow-narrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <figure class="hero_slide_img">
+              <img src="images/banners/banner_6.webp" alt="Furniture Banner 2">
+            </figure>
+            <div class="hero_slide">
+              <div class="container">
+                <div class="hero_content">
+                  <hgroup>
+                    <h1 class="hero_banner_title">Up to 50% Off!</h1>
+                    <p class="hero_banner_desc">Buy your favorite furniture now at up to 50% off!</p>
+                  </hgroup>
+                  <a href="#" class="banner_cta button">
+                    <span>Explore</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <figure class="hero_slide_img">
+              <img src="images/banners/banner_7.webp" alt="Furniture Banner 3">
+            </figure>
+            <div class="hero_slide">
+              <div class="container">
+                <div class="hero_content">
+                  <hgroup>
+                    <h1 class="hero_banner_title">Modern Furniture Collection!</h1>
+                    <p class="hero_banner_desc">Discover our latest collection of modern furniture designs.</p>
+                  </hgroup>
+                  <a href="#" class="banner_cta button">
+                    <span>Shop Now</span>
+                    <i class="ti ti-arrow-narrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <figure class="hero_slide_img">
+              <img src="images/banners/banner_8.webp" alt="Furniture Banner 4">
+            </figure>
+            <div class="hero_slide">
+              <div class="container">
+                <div class="hero_content">
+                  <hgroup>
+                    <h1 class="hero_banner_title">Limited Time Offer!</h1>
+                    <p class="hero_banner_desc">Hurry! Grab the best deals on furniture before they're gone.</p>
+                  </hgroup>
+                  <a href="#" class="banner_cta button">
+                    <span>Browse Deals</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next swiper-button"></div>
+        <div class="swiper-button-prev swiper-button"></div>
+      </div>
+    </section>
+    <!-- end of hero -->
+    <!-- shop by category -->
+    <section class="categories">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading">
+              <h2 class="heading_title">Shop by Category</h2>
+              <a href="#" class="button">
+                <span>view all</span>
+                <i class="ti ti-arrow-right"></i>
+              </a>
+            </div>
+            <div class="categories_grid">
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_1.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Furniture</h4>
+                  <p class="category_items_length">25 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_2.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Tables & Desks</h4>
+                  <p class="category_items_length">19 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_3.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Bedding</h4>
+                  <p class="category_items_length">23 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_4.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Tools</h4>
+                  <p class="category_items_length">19 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_5.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Kitchen</h4>
+                  <p class="category_items_length">21 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_6.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Baby & Kids</h4>
+                  <p class="category_items_length">12 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_7.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Home Textiles</h4>
+                  <p class="category_items_length">20 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_8.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Home Decor</h4>
+                  <p class="category_items_length">22 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_9.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Lighting</h4>
+                  <p class="category_items_length">15 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_10.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Cookware</h4>
+                  <p class="category_items_length">19 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_11.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Bathroom</h4>
+                  <p class="category_items_length">7 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_12.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Pet Accessories</h4>
+                  <p class="category_items_length">151 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_13.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Outdoor</h4>
+                  <p class="category_items_length">151 items</p>
+                </div>
+              </a>
+              <a href="#" class="category_item">
+                <figure class="category_img">
+                  <img src="images/categories/category_14.webp" alt="">
+                </figure>
+                <div class="category_content">
+                  <h4 class="category_title">Laundry</h4>
+                  <p class="category_items_length">11 items</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end shop by category -->
+    <!-- deals -->
+    <section class="home_deals">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading">
+              <h2 class="heading_title">special weekend deals!</h2>
+              <a href="#" class="button">
+                <span>view all</span>
+                <i class="ti ti-arrow-right"></i>
+              </a>
+            </div>
+            <div class="home_deals_products">
+              <div class="product-card">
+                <div class="product-card-head">
+                  <div class="product-action">
+                    <span class="ti ti-eye quick-view"></span>
+                    <span class="ti ti-heart add-wishlist"></span>
+                  </div>
+                  <a href="#">
+                    <figure>
+                      <img src="images/products/product_1.webp" alt="Product Image">
+                    </figure>
+                  </a>
+                  <button class="button">
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="details">
+                  <a href="#">
+                    <h3>Wooden Dining Table</h3>
+                  </a>
+                  <p class="price">$249.99</p>
+                  <div class="stock-status out-stock">Sold out</div>
+                  <div class="color-variations">
+                    <span style="background-color: #836953;"></span>
+                    <span style="background-color: #000000;"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-head">
+                  <div class="product-action">
+                    <span class="ti ti-eye quick-view"></span>
+                    <span class="ti ti-heart add-wishlist"></span>
+                  </div>
+                  <a href="#">
+                    <figure>
+                      <img src="images/products/product_2.webp" alt="Product Image">
+                    </figure>
+                  </a>
+                  <button class="button">
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="details">
+                  <a href="#">
+                    <h3>Leather Sofa Set</h3>
+                  </a>
+                  <p class="price">$799.99</p>
+                  <div class="stock-status in-stock">in Stock</div>
+                  <div class="color-variations">
+                    <span style="background-color: #333333;"></span>
+                    <span style="background-color: #b7b7b7;"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-head">
+                  <div class="product-action">
+                    <span class="ti ti-eye quick-view"></span>
+                    <span class="ti ti-heart add-wishlist"></span>
+                  </div>
+                  <a href="#">
+                    <figure>
+                      <img src="images/products/product_3.webp" alt="Product Image">
+                    </figure>
+                  </a>
+                  <button class="button">
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="details">
+                  <a href="#">
+                    <h3>Modern Coffee Table</h3>
+                  </a>
+                  <p class="price">$149.99</p>
+                  <div class="stock-status in-stock">in Stock</div>
+                  <div class="color-variations">
+                    <span style="background-color: #ffffff;"></span>
+                    <span style="background-color: #333333;"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-head">
+                  <div class="product-action">
+                    <span class="ti ti-eye quick-view"></span>
+                    <span class="ti ti-heart add-wishlist"></span>
+                  </div>
+                  <a href="#">
+                    <figure>
+                      <img src="images/products/product_4.webp" alt="Product Image">
+                    </figure>
+                  </a>
+                  <button class="button">
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="details">
+                  <a href="#">
+                    <h3>Antique Wooden Chair</h3>
+                  </a>
+                  <p class="price">$99.99</p>
+                  <div class="stock-status in-stock">in Stock</div>
+                  <div class="color-variations">
+                    <span style="background-color: #543b39;"></span>
+                    <span style="background-color: #a28b7c;"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-head">
+                  <div class="product-action">
+                    <span class="ti ti-eye quick-view"></span>
+                    <span class="ti ti-heart add-wishlist"></span>
+                  </div>
+                  <a href="#">
+                    <figure>
+                      <img src="images/products/product_5.webp" alt="Product Image">
+                    </figure>
+                  </a>
+                  <button class="button">
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="details">
+                  <a href="#">
+                    <h3>Modern TV Stand</h3>
+                  </a>
+                  <p class="price">$299.99</p>
+                  <div class="stock-status out-stock">Sold out</div>
+                  <div class="color-variations">
+                    <span style="background-color: #333333;"></span>
+                    <span style="background-color: #ffffff;"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-head">
+                  <div class="product-action">
+                    <span class="ti ti-eye quick-view"></span>
+                    <span class="ti ti-heart add-wishlist"></span>
+                  </div>
+                  <a href="#">
+                    <figure>
+                      <img src="images/products/product_6.webp" alt="Product Image">
+                    </figure>
+                  </a>
+                  <button class="button">
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="details">
+                  <a href="#">
+                    <h3>Classic Armchair</h3>
+                  </a>
+                  <p class="price">$199.99</p>
+                  <div class="stock-status out-stock">Sold out</div>
+                  <div class="color-variations">
+                    <span style="background-color: #7b6d64;"></span>
+                    <span style="background-color: #b4a7a2;"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-head">
+                  <div class="product-action">
+                    <span class="ti ti-eye quick-view"></span>
+                    <span class="ti ti-heart add-wishlist"></span>
+                  </div>
+                  <a href="#">
+                    <figure>
+                      <img src="images/products/product_7.webp" alt="Product Image">
+                    </figure>
+                  </a>
+                  <button class="button">
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="details">
+                  <a href="#">
+                    <h3>Rustic Bookshelf</h3>
+                  </a>
+                  <p class="price">$149.99</p>
+                  <div class="stock-status in-stock">in Stock</div>
+                  <div class="color-variations">
+                    <span style="background-color: #3a352e;"></span>
+                    <span style="background-color: #8a7d6f;"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-head">
+                  <div class="product-action">
+                    <span class="ti ti-eye quick-view"></span>
+                    <span class="ti ti-heart add-wishlist"></span>
+                  </div>
+                  <a href="#">
+                    <figure>
+                      <img src="images/products/product_8.webp" alt="Product Image">
+                    </figure>
+                  </a>
+                  <button class="button">
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="details">
+                  <a href="#">
+                    <h3>Contemporary Desk</h3>
+                  </a>
+                  <p class="price">$179.99</p>
+                  <div class="stock-status out-stock">Sold out</div>
+                  <div class="color-variations">
+                    <span style="background-color: #ffffff;"></span>
+                    <span style="background-color: #333333;"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-head">
+                  <div class="product-action">
+                    <span class="ti ti-eye quick-view"></span>
+                    <span class="ti ti-heart add-wishlist"></span>
+                  </div>
+                  <a href="#">
+                    <figure>
+                      <img src="images/products/product_9.webp" alt="Product Image">
+                    </figure>
+                  </a>
+                  <button class="button">
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="details">
+                  <a href="#">
+                    <h3>Velvet Ottoman</h3>
+                  </a>
+                  <p class="price">$79.99</p>
+                  <div class="stock-status in-stock">in Stock</div>
+                  <div class="color-variations">
+                    <span style="background-color: #6b4950;"></span>
+                    <span style="background-color: #a6868c;"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-head">
+                  <div class="product-action">
+                    <span class="ti ti-eye quick-view"></span>
+                    <span class="ti ti-heart add-wishlist"></span>
+                  </div>
+                  <a href="#">
+                    <figure>
+                      <img src="images/products/product_10.webp" alt="Product Image">
+                    </figure>
+                  </a>
+                  <button class="button">
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="details">
+                  <a href="#">
+                    <h3>Industrial Bar Stool</h3>
+                  </a>
+                  <p class="price">$89.99</p>
+                  <div class="stock-status in-stock">in Stock</div>
+                  <div class="color-variations">
+                    <span style="background-color: #333333;"></span>
+                    <span style="background-color: #b7b7b7;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end deals -->
+    <!-- sale banner -->
+    <section class="sale_banners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading">
+              <h4 class="heading_title">home decor + free shipping</h4>
+              <a href="#" class="button">
+                <span>view all</span>
+                <i class="ti ti-arrow-right"></i>
+              </a>
+            </div>
+            <div class="sale_banner_grid">
+              <a href="#" class="sale_banner">
+                <figure class="sale_banner_img">
+                  <img src="images/sales/sale_5.webp" alt="">
+                </figure>
+                <div class="sale_banner_content">
+                  <h4>Ferm Living Winter Collection</h4>
+                  <p>From $130.00</p>
+                  <button class="button">
+                    <span>Shop now</span>
+                  </button>
+                </div>
+              </a>
+              <a href="#" class="sale_banner">
+                <figure class="sale_banner_img">
+                  <img src="images/sales/sale_6.webp" alt="">
+                </figure>
+                <div class="sale_banner_content">
+                  <h4>Spring Clearance Sale</h4>
+                  <p>From $99.99</p>
+                  <button class="button">
+                    <span>Shop now</span>
+                  </button>
+                </div>
+              </a>
+              <a href="#" class="sale_banner">
+                <figure class="sale_banner_img">
+                  <img src="images/sales/sale_7.webp" alt="">
+                </figure>
+                <div class="sale_banner_content">
+                  <h4>Summer Furniture Deals</h4>
+                  <p>From $199.99</p>
+                  <button class="button">
+                    <span>Shop now</span>
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end sale banner -->
+  </main>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

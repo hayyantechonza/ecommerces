@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home - E-commerce Click & Collect</title>
+   <!-- bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <!-- stylesheet -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- responsive -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- swipper -->
+   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+   <!-- font -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link type="image/png" sizes="96x96" rel="icon" href="images/fav_icon.svg">
+</head>
+
+<body>
+   <!-- header -->
+   <header>
+      <div class="top_header bg-primary">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <p class="text-center py-10 text-black text-uppercase">black friday has begun | up to 70% off: <a href="#" class="underline">shop now</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="main_header">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="menu_container relative flex gap-30 items-center">
+                        <a href="index.html" class="logo flex items-center justify-start text-center">
+                           <img class="lazy" src="images/logo.png" alt="">
+                        </a>
+                     <div class="search_form_main flex flex-1 justify-center">
+                        <form class="search_form flex items-center h-45 pr-10">
+                           <select class="absolute z-10 p-10 cursor-pointer text-capitalize bg-primary">
+                              <option value="">categories</option>
+                              <option value="">asd</option>
+                              <option value="">asd</option>
+                              <option value="">asd</option>
+                           </select>
+                           <input type="text" autocomplete="off" class="h-full w-full absolute z-1 p-15" id="search" placeholder="Search our store">
+                           <a href="#" class="search_icon cursor-pointer z-1 flex items-center w-45 h-full bg-gray">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="open_search block" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="close_search none" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                           </a>
+                        </form>
+                     </div>
+                     <div class="header_icons flex items-center gap-15 justify-end">
+                        <a href="cart.html" class="header_icon h-25">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                           </svg>
+                        </a>
+                        <a href="#" class="header_icon h-25">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                           </svg>
+                        </a>
+                        <a href="login.html" class="header_icon h-25">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                           </svg>
+                        </a>
+                        <button class="header_icon h-25 toggler_icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                        </svg>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="bottom_header">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <nav class="navigation flex justify-start">
+                     <!-- <a href="#" class="toggler_icon open_menu h-40 w-40 p-5 none items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                     </a> -->
+                     <ul class="site_nav z-10 flex items-center gap-25 list-unstyled text-capitalize justify-center">
+                        <a href="#" class="toggler_icon close_menu h-25 w-25 none items-center justify-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                           </svg>
+                        </a>
+                        <li><a href="index.html" class="flex">home</a></li>
+                        <li class="mega_menu_link h-full">
+                           <a href="javascript:void(0);" class="text-black h-full flex gap-5 items-center py-10"><span>New Arrivals</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-15">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                              </svg>
+                           </a>
+                           <div class="mega_menu_wrapper none absolute w-full px-30 bg-white py-25">
+                              <div class="mega_menu gap-20 flex flex-wrap items-start">
+                                 <div class="menu_list">
+                                    <ul class="flex flex-column gap-15">
+                                       <h4 class="meega_menu_heading text-black">categories</h4>
+                                       <li><a href="collection.html">Brights</a></li>
+                                       <li><a href="collection.html">Cut Outs</a></li>
+                                       <li><a href="collection.html">Embellishment</a></li>
+                                       <li><a href="collection.html">Lace</a></li>
+                                       <li><a href="collection.html">Mesh</a></li>
+                                       <li><a href="collection.html">Neutrals</a></li>
+                                    </ul>
+                                 </div>
+                                 <ul class="mega_menu_img_div flex flex-1 gap-20 flex-wrap">
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_1.jpg" alt="">
+                                          <p>Best Dressed Guest</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_2.jpg" alt="">
+                                          <p>Weekend</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_3.jpg" alt="">
+                                          <p>Milly Minis</p>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="mega_menu_link h-full">
+                           <a href="javascript:void(0);" class="text-black h-full flex gap-5 items-center py-10"><span>Dresses</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-15">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                              </svg></a>
+                           <div class="mega_menu_wrapper none absolute w-full px-30 bg-white py-25">
+                              <div class="mega_menu gap-20 flex flex-wrap items-start">
+                                 <div class="menu_list">
+                                    <ul class="flex flex-column gap-15">
+                                       <h4 class="meega_menu_heading text-black">categories</h4>
+                                       <li><a href="collection.html">Brights</a></li>
+                                       <li><a href="collection.html">Cut Outs</a></li>
+                                       <li><a href="collection.html">Embellishment</a></li>
+                                       <li><a href="collection.html">Lace</a></li>
+                                       <li><a href="collection.html">Mesh</a></li>
+                                       <li><a href="collection.html">Neutrals</a></li>
+                                    </ul>
+                                 </div>
+                                 <ul class="mega_menu_img_div flex flex-1 gap-20 flex-wrap">
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_1.jpg" alt="">
+                                          <p>Best Dressed Guest</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_2.jpg" alt="">
+                                          <p>Weekend</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_3.jpg" alt="">
+                                          <p>Milly Minis</p>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="mega_menu_link h-full">
+                           <a href="javascript:void(0);" class="text-black h-full flex gap-5 items-center py-10"><span>Clothing</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-15">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                              </svg>
+                           </a>
+                           <div class="mega_menu_wrapper none absolute w-full px-30 bg-white py-25">
+                              <div class="mega_menu gap-20 flex flex-wrap items-start">
+                                 <div class="menu_list">
+                                    <ul class="flex flex-column gap-15">
+                                       <h4 class="meega_menu_heading text-black">categories</h4>
+                                       <li><a href="collection.html">Brights</a></li>
+                                       <li><a href="collection.html">Cut Outs</a></li>
+                                       <li><a href="collection.html">Embellishment</a></li>
+                                       <li><a href="collection.html">Lace</a></li>
+                                       <li><a href="collection.html">Mesh</a></li>
+                                       <li><a href="collection.html">Neutrals</a></li>
+                                    </ul>
+                                 </div>
+                                 <ul class="mega_menu_img_div flex flex-1 gap-20 flex-wrap">
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_1.jpg" alt="">
+                                          <p>Best Dressed Guest</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_2.jpg" alt="">
+                                          <p>Weekend</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_3.jpg" alt="">
+                                          <p>Milly Minis</p>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="mega_menu_link h-full">
+                           <a href="javascript:void(0);" class="text-black h-full flex gap-5 items-center py-10"><span>Occasion Shop</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-15">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                              </svg></a>
+                           <div class="mega_menu_wrapper none absolute w-full px-30 bg-white py-25">
+                              <div class="mega_menu gap-20 flex flex-wrap items-start">
+                                 <div class="menu_list">
+                                    <ul class="flex flex-column gap-15">
+                                       <h4 class="meega_menu_heading text-black">categories</h4>
+                                       <li><a href="collection.html">Brights</a></li>
+                                       <li><a href="collection.html">Cut Outs</a></li>
+                                       <li><a href="collection.html">Embellishment</a></li>
+                                       <li><a href="collection.html">Lace</a></li>
+                                       <li><a href="collection.html">Mesh</a></li>
+                                       <li><a href="collection.html">Neutrals</a></li>
+                                    </ul>
+                                 </div>
+                                 <ul class="mega_menu_img_div flex flex-1 gap-20 flex-wrap">
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_1.jpg" alt="">
+                                          <p>Best Dressed Guest</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_2.jpg" alt="">
+                                          <p>Weekend</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_3.jpg" alt="">
+                                          <p>Milly Minis</p>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        
+                        <li class="mega_menu_link h-full">
+                           <a href="javascript:void(0);" class="text-black h-full flex gap-5 items-center py-10"><span>sale</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-15">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                              </svg></a>
+                           <div class="mega_menu_wrapper none absolute w-full px-30 bg-white py-25">
+                              <div class="mega_menu gap-20 flex flex-wrap items-start">
+                                 <div class="menu_list">
+                                    <ul class="flex flex-column gap-15">
+                                       <h4 class="meega_menu_heading text-black">categories</h4>
+                                       <li><a href="collection.html">Brights</a></li>
+                                       <li><a href="collection.html">Cut Outs</a></li>
+                                       <li><a href="collection.html">Embellishment</a></li>
+                                       <li><a href="collection.html">Lace</a></li>
+                                       <li><a href="collection.html">Mesh</a></li>
+                                       <li><a href="collection.html">Neutrals</a></li>
+                                    </ul>
+                                 </div>
+                                 <ul class="mega_menu_img_div flex flex-1 gap-20 flex-wrap">
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_1.jpg" alt="">
+                                          <p>Best Dressed Guest</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_2.jpg" alt="">
+                                          <p>Weekend</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="collection.html" class="flex flex-column gap-15">
+                                          <img src="images/mega_menu/mega_menu_3.jpg" alt="">
+                                          <p>Milly Minis</p>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li><a href="about.html" class="flex">about</a></li>
+                        <li><a href="contact.html" class="flex">contact </a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- breadcrumb -->
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="collection_container">
+               <ol class="breadcrumb bg-white">
+                  <li class="breadcrumb-item text-capitalize font-500"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item text-capitalize font-500"><a href="collection.html">collection</a></li>
+                  <li class="breadcrumb-item text-capitalize font-500 active" aria-current="page">single collection</li>
+               </ol>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--  single collection -->
+   <section class="single_collection">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="single_collection_container relative flex gap-30 items-start">
+                  <div class="collection_sidebar flex flex-column gap-30">
+                     <div class="collection_sidebar_item flex flex-column gap-10">
+                        <h4 class="text-black flex items-center justify-between font-700 text-capitalize mb-10 relative cursor-pointer gap-5">
+                           <span>colours</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-20 w-20">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                           </svg>
+                        </h4>
+                        <div class="collection_sidebar_wrpr w-full">
+                           <div class="product_colors flex items center gap-10">
+                              <span class="block red h-20 w-20"></span>
+                              <span class="block blue h-20 w-20"></span>
+                              <span class="block indigo h-20 w-20"></span>
+                              <span class="block green h-20 w-20"></span>
+                              <span class="block purple h-20 w-20"></span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="collection_sidebar_item flex flex-column gap-10">
+                        <h4 class="text-black flex items-center justify-between font-700 text-capitalize mb-10 relative cursor-pointer gap-5">
+                           <span>colours</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-20 w-20">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                           </svg>
+                        </h4>
+                        <div class="collection_sidebar_wrpr w-full">
+                           <div class="sizes flex items center gap-10 flex-wrap">
+                              <span class="h-35 w-35 flex items-center justify-center font-500 text-uppercase active">xs</span>
+                              <span class="h-35 w-35 flex items-center justify-center font-500 text-uppercase">s</span>
+                              <span class="h-35 w-35 flex items-center justify-center font-500 text-uppercase">m</span>
+                              <span class="h-35 w-35 flex items-center justify-center font-500 text-uppercase">l</span>
+                              <span class="h-35 w-35 flex items-center justify-center font-500 text-uppercase">xl</span>
+                              <span class="h-35 w-35 flex items-center justify-center font-500 text-uppercase">xxl</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="collection_sidebar_item flex flex-column gap-10">
+                        <h4 class="text-black flex items-center justify-between font-700 text-capitalize mb-10 relative cursor-pointer gap-5">
+                           <span>colours</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-20 w-20">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                           </svg>
+                        </h4>
+                        <div class="collection_sidebar_wrpr w-full">
+                           <div class="sizes flex items-center gap-10 flex-wrap">
+                              <span class="flex items-center justify-center font-500 text-capitalize px-20 py-10 active">women</span>
+                              <span class="flex items-center justify-center font-500 text-capitalize px-20 py-10">Men</span>
+                              <span class="flex items-center justify-center font-500 text-capitalize px-20 py-10">Kids</span>
+                              <span class="flex items-center justify-center font-500 text-capitalize px-20 py-10">Men</span>
+                              <span class="flex items-center justify-center font-500 text-capitalize px-20 py-10">Clothes</span>
+                              <span class="flex items-center justify-center font-500 text-capitalize px-20 py-10">Kids</span>
+                              <span class="flex items-center justify-center font-500 text-capitalize px-20 py-10">Men</span>
+                              <span class="flex items-center justify-center font-500 text-capitalize px-20 py-10">Clothes</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="collection_sidebar_item flex flex-column gap-10">
+                        <h4 class="text-black flex items-center justify-between font-700 text-capitalize mb-10 relative cursor-pointer gap-5">
+                           <span>colours</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-20 w-20">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                           </svg>
+                        </h4>
+                        <div class="collection_sidebar_wrpr w-full">
+                           <div class="prices flex gap-10 flex-column items-end flex-1 w-full">
+                              <form class="range_number flex gap-5" action="">
+                                 <input type="number" value="0" max="100" min="0">$
+                              </form>
+                              <input type="range" min="0" max="100" value="0" class="min-range">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="collection_sidebar_item flex flex-column gap-10">
+                        <h4 class="text-black flex items-center justify-between font-700 text-capitalize mb-10 relative cursor-pointer gap-5">
+                           <span>colours</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-20 w-20">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                           </svg>
+                        </h4>
+                        <div class="collection_sidebar_wrpr w-full">
+                           <div class="popular_products flex gap-20 flex-column flex-1 w-full">
+                              <a href="#" class="popular_product_item flex items-start gap-10">
+                                 <picture><img src="images/products/product_1.png" alt=""></picture>
+                                 <div class="popular_product_content flex flex-column gap-5">
+                                    <h3 class="font-500 text-capitalize text-black webkit_box line_clamp_2">Ultimate Denim</h3>
+                                    <span class="font-500 text-capitalize text-black">jens</span><span class="popular_product_price font-500 pt-5 text-capitalize text-black">1123.12</span>
+                                 </div>
+                              </a>
+                              <a href="#" class="popular_product_item flex items-start gap-10">
+                                 <picture><img src="images/products/product_2.png" alt=""></picture>
+                                 <div class="popular_product_content flex flex-column gap-5">
+                                    <h3 class="font-500 text-capitalize text-black webkit_box line_clamp_2">Ultimate Denim</h3>
+                                    <span class="font-500 text-capitalize text-black">jens</span><span class="popular_product_price font-500 pt-5 text-capitalize text-black">2123.12</span>
+                                 </div>
+                              </a>
+                              <a href="#" class="popular_product_item flex items-start gap-10">
+                                 <picture><img src="images/products/product_3.png" alt=""></picture>
+                                 <div class="popular_product_content flex flex-column gap-5">
+                                    <h3 class="font-500 text-capitalize text-black webkit_box line_clamp_2">Ultimate Denim</h3>
+                                    <span class="font-500 text-capitalize text-black">jens</span><span class="popular_product_price font-500 pt-5 text-capitalize text-black">3123.12</span>
+                                 </div>
+                              </a>
+                              <a href="#" class="popular_product_item flex items-start gap-10">
+                                 <picture><img src="images/products/product_4.png" alt=""></picture>
+                                 <div class="popular_product_content flex flex-column gap-5">
+                                    <h3 class="font-500 text-capitalize text-black webkit_box line_clamp_2">Ultimate Denim</h3>
+                                    <span class="font-500 text-capitalize text-black">jens</span><span class="popular_product_price font-500 pt-5 text-capitalize text-black">4123.12</span>
+                                 </div>
+                              </a>
+                              <a href="#" class="popular_product_item flex items-start gap-10">
+                                 <picture><img src="images/products/product_5.png" alt=""></picture>
+                                 <div class="popular_product_content flex flex-column gap-5">
+                                    <h3 class="font-500 text-capitalize text-black webkit_box line_clamp_2">Ultimate Denim</h3>
+                                    <span class="font-500 text-capitalize text-black">jens</span><span class="popular_product_price font-500 pt-5 text-capitalize text-black">5123.12</span>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="filter_btn flex items-center none justify-center gap-5">
+                     <span class="font-700 text-capitalize text-capitalize">filter</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-20 h-20">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 00-.659-1.591L3.659 7.409A2.25 2.25 0 013 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0112 3z" />
+                     </svg>
+                  </button>
+                  <div class="collection_main flex-1 grid column-4 gap-20">
+                     <a href="single_product.html" class="product flex flex-column gap-10">
+                        <picture>
+                           <img src="images/products/product_1.png" alt="" class="img_1 absolute z-1"><img src="images/products/product_8.png" alt="" class="img_2">
+                           <div class="cart_btn_container z-10 px-10 gap-10 w-full flex absolute">
+                              <button class="product_btn flex-1 bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"></path>
+                                 </svg>
+                                 <span class="text-black text-uppercase">add to cart</span>
+                              </button>
+                              <button class="product_btn wish_btn bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-25 w-25">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </picture>
+                        <div class="product_content flex gap-10 flex-column text-center items-center">
+                           <div class="product_colors flex items center gap-10">
+                              <span class="block red h-20 w-20"></span>
+                              <span class="block blue h-20 w-20"></span>
+                              <span class="block indigo h-20 w-20"></span>
+                              <span class="block green h-20 w-20"></span>
+                              <span class="block purple h-20 w-20"></span>
+                           </div>
+                           <h4 class="product_title font-500 text-capitalize text-black">olivia sequin lace dress</h4>
+                           <p class="product_price font-500">£75.48</p>
+                        </div>
+                     </a>
+                     <a href="single_product.html" class="product flex flex-column gap-10">
+                        <picture>
+                           <img src="images/products/product_2.png" alt="" class="img_1 absolute z-1"><img src="images/products/product_7.png" alt="" class="img_2">
+                           <div class="cart_btn_container z-10 px-10 gap-10 w-full flex absolute">
+                              <button class="product_btn flex-1 bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"></path>
+                                 </svg>
+                                 <span class="text-black text-uppercase">add to cart</span>
+                              </button>
+                              <button class="product_btn wish_btn bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-25 w-25">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </picture>
+                        <div class="product_content flex gap-10 flex-column text-center items-center">
+                           <div class="product_colors flex items center gap-10">
+                              <span class="block red h-20 w-20"></span>
+                              <span class="block blue h-20 w-20"></span>
+                              <span class="block indigo h-20 w-20"></span>
+                              <span class="block green h-20 w-20"></span>
+                              <span class="block purple h-20 w-20"></span>
+                           </div>
+                           <h4 class="product_title font-500 text-capitalize text-black">olivia sequin lace dress</h4>
+                           <p class="product_price font-500">£75.48</p>
+                        </div>
+                     </a>
+                     <a href="single_product.html" class="product flex flex-column gap-10">
+                        <picture>
+                           <img src="images/products/product_3.png" alt="" class="img_1 absolute z-1"><img src="images/products/product_6.png" alt="" class="img_2">
+                           <div class="cart_btn_container z-10 px-10 gap-10 w-full flex absolute">
+                              <button class="product_btn flex-1 bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"></path>
+                                 </svg>
+                                 <span class="text-black text-uppercase">add to cart</span>
+                              </button>
+                              <button class="product_btn wish_btn bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-25 w-25">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </picture>
+                        <div class="product_content flex gap-10 flex-column text-center items-center">
+                           <div class="product_colors flex items center gap-10">
+                              <span class="block red h-20 w-20"></span>
+                              <span class="block blue h-20 w-20"></span>
+                              <span class="block indigo h-20 w-20"></span>
+                              <span class="block green h-20 w-20"></span>
+                              <span class="block purple h-20 w-20"></span>
+                           </div>
+                           <h4 class="product_title font-500 text-capitalize text-black">olivia sequin lace dress</h4>
+                           <p class="product_price font-500">£75.48</p>
+                        </div>
+                     </a>
+                     <a href="single_product.html" class="product flex flex-column gap-10">
+                        <picture>
+                           <img src="images/products/product_4.png" alt="" class="img_1 absolute z-1"><img src="images/products/product_5.png" alt="" class="img_2">
+                           <div class="cart_btn_container z-10 px-10 gap-10 w-full flex absolute">
+                              <button class="product_btn flex-1 bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"></path>
+                                 </svg>
+                                 <span class="text-black text-uppercase">add to cart</span>
+                              </button>
+                              <button class="product_btn wish_btn bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-25 w-25">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </picture>
+                        <div class="product_content flex gap-10 flex-column text-center items-center">
+                           <div class="product_colors flex items center gap-10">
+                              <span class="block red h-20 w-20"></span>
+                              <span class="block blue h-20 w-20"></span>
+                              <span class="block indigo h-20 w-20"></span>
+                              <span class="block green h-20 w-20"></span>
+                              <span class="block purple h-20 w-20"></span>
+                           </div>
+                           <h4 class="product_title font-500 text-capitalize text-black">olivia sequin lace dress</h4>
+                           <p class="product_price font-500">£75.48</p>
+                        </div>
+                     </a>
+                     <a href="single_product.html" class="product flex flex-column gap-10">
+                        <picture>
+                           <img src="images/products/product_5.png" alt="" class="img_1 absolute z-1"><img src="images/products/product_4.png" alt="" class="img_2">
+                           <div class="cart_btn_container z-10 px-10 gap-10 w-full flex absolute">
+                              <button class="product_btn flex-1 bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"></path>
+                                 </svg>
+                                 <span class="text-black text-uppercase">add to cart</span>
+                              </button>
+                              <button class="product_btn wish_btn bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-25 w-25">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </picture>
+                        <div class="product_content flex gap-10 flex-column text-center items-center">
+                           <div class="product_colors flex items center gap-10">
+                              <span class="block red h-20 w-20"></span>
+                              <span class="block blue h-20 w-20"></span>
+                              <span class="block indigo h-20 w-20"></span>
+                              <span class="block green h-20 w-20"></span>
+                              <span class="block purple h-20 w-20"></span>
+                           </div>
+                           <h4 class="product_title font-500 text-capitalize text-black">olivia sequin lace dress</h4>
+                           <p class="product_price font-500">£75.48</p>
+                        </div>
+                     </a>
+                     <a href="single_product.html" class="product flex flex-column gap-10">
+                        <picture>
+                           <img src="images/products/product_6.png" alt="" class="img_1 absolute z-1"><img src="images/products/product_3.png" alt="" class="img_2">
+                           <div class="cart_btn_container z-10 px-10 gap-10 w-full flex absolute">
+                              <button class="product_btn flex-1 bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"></path>
+                                 </svg>
+                                 <span class="text-black text-uppercase">add to cart</span>
+                              </button>
+                              <button class="product_btn wish_btn bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-25 w-25">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </picture>
+                        <div class="product_content flex gap-10 flex-column text-center items-center">
+                           <div class="product_colors flex items center gap-10">
+                              <span class="block red h-20 w-20"></span>
+                              <span class="block blue h-20 w-20"></span>
+                              <span class="block indigo h-20 w-20"></span>
+                              <span class="block green h-20 w-20"></span>
+                              <span class="block purple h-20 w-20"></span>
+                           </div>
+                           <h4 class="product_title font-500 text-capitalize text-black">olivia sequin lace dress</h4>
+                           <p class="product_price font-500">£75.48</p>
+                        </div>
+                     </a>
+                     <a href="single_product.html" class="product flex flex-column gap-10">
+                        <picture>
+                           <img src="images/products/product_7.png" alt="" class="img_1 absolute z-1"><img src="images/products/product_2.png" alt="" class="img_2">
+                           <div class="cart_btn_container z-10 px-10 gap-10 w-full flex absolute">
+                              <button class="product_btn flex-1 bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"></path>
+                                 </svg>
+                                 <span class="text-black text-uppercase">add to cart</span>
+                              </button>
+                              <button class="product_btn wish_btn bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-25 w-25">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </picture>
+                        <div class="product_content flex gap-10 flex-column text-center items-center">
+                           <div class="product_colors flex items center gap-10">
+                              <span class="block red h-20 w-20"></span>
+                              <span class="block blue h-20 w-20"></span>
+                              <span class="block indigo h-20 w-20"></span>
+                              <span class="block green h-20 w-20"></span>
+                              <span class="block purple h-20 w-20"></span>
+                           </div>
+                           <h4 class="product_title font-500 text-capitalize text-black">olivia sequin lace dress</h4>
+                           <p class="product_price font-500">£75.48</p>
+                        </div>
+                     </a>
+                     <a href="single_product.html" class="product flex flex-column gap-10">
+                        <picture>
+                           <img src="images/products/product_8.png" alt="" class="img_1 absolute z-1"><img src="images/products/product_1.png" alt="" class="img_2">
+                           <div class="cart_btn_container z-10 px-10 gap-10 w-full flex absolute">
+                              <button class="product_btn flex-1 bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"></path>
+                                 </svg>
+                                 <span class="text-black text-uppercase">add to cart</span>
+                              </button>
+                              <button class="product_btn wish_btn bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-25 w-25">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </picture>
+                        <div class="product_content flex gap-10 flex-column text-center items-center">
+                           <div class="product_colors flex items center gap-10">
+                              <span class="block red h-20 w-20"></span>
+                              <span class="block blue h-20 w-20"></span>
+                              <span class="block indigo h-20 w-20"></span>
+                              <span class="block green h-20 w-20"></span>
+                              <span class="block purple h-20 w-20"></span>
+                           </div>
+                           <h4 class="product_title font-500 text-capitalize text-black">olivia sequin lace dress</h4>
+                           <p class="product_price font-500">£75.48</p>
+                        </div>
+                     </a>
+                     <a href="single_product.html" class="product flex flex-column gap-10">
+                        <picture>
+                           <img src="images/products/product_3.png" alt="" class="img_1 absolute z-1"><img src="images/products/product_6.png" alt="" class="img_2">
+                           <div class="cart_btn_container z-10 px-10 gap-10 w-full flex absolute">
+                              <button class="product_btn flex-1 bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"></path>
+                                 </svg>
+                                 <span class="text-black text-uppercase">add to cart</span>
+                              </button>
+                              <button class="product_btn wish_btn bg-white flex gap-10 items-center p-10 text-center justify-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-25 w-25">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </picture>
+                        <div class="product_content flex gap-10 flex-column text-center items-center">
+                           <div class="product_colors flex items center gap-10">
+                              <span class="block red h-20 w-20"></span>
+                              <span class="block blue h-20 w-20"></span>
+                              <span class="block indigo h-20 w-20"></span>
+                              <span class="block green h-20 w-20"></span>
+                              <span class="block purple h-20 w-20"></span>
+                           </div>
+                           <h4 class="product_title font-500 text-capitalize text-black">olivia sequin lace dress</h4>
+                           <p class="product_price font-500">£75.48</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <nav class="flex items-center justify-end">
+                  <ul class="pagination flex">
+                     <li class="page-item active"><a class="page-link font-600" href="#">Previous</a></li>
+                     <li class="page-item"><a href="#" class="page-link font-600">1</a></li>
+                     <li class="page-item"><a href="#" class="page-link font-600">2</a></li>
+                     <li class="page-item"><a href="#" class="page-link font-600">3</a></li>
+                     <li class="page-item"><a href="#" class="page-link font-600">4</a></li>
+                     <li class="page-item"><a href="#" class="page-link font-600">5</a></li>
+                     <li class="page-item"><a href="#" class="page-link font-600">6</a></li>
+                     <li class="page-item"><a href="#" class="page-link font-600">7</a></li>
+                     <li class="page-item"><a href="#" class="page-link font-600">8</a></li>
+                     <li class="page-item"><a class="page-link font-600" href="#">Next</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--  footer -->
+   <section>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="subs">
+                  <div class="subs_content">
+                     <h2 class="subs_heading">Subscribe To Our Newsletter</h2>
+                     <p class="subs_about">Sign up for our weekly email newsletter with the best money saving coupons.</p>
+                  </div>
+                  <form class="sub_form">
+                     <div class="sub_form_wrapper">
+                        <input type="email" required="required" class="sub_input" placeholder="Enter You'r Email">
+                        <button class="sub_btn"><i class="fa fa-paper-plane"></i>Subscribe</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer>
+      <section class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="popular_posts">
+                     <div class="post_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                        </svg>
+                        <div class="post_box_content">
+                           <h4 class="stats_number">Free Delivery</h4>
+                        </div>
+                     </div>
+                     <div class="post_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+                        </svg>
+                        <div class="post_box_content">
+                           <h4 class="stats_number">30 Day Return Policy</h4>
+                        </div>
+                     </div>
+                     <div class="post_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div class="post_box_content">
+                           <h4 class="stats_number">24 Hour Dispatch</h4>
+                        </div>
+                     </div>
+                     <div class="post_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                        </svg>
+                        <div class="post_box_content">
+                           <h4 class="stats_number">Secure Checkout</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <div class="content wrap">
+                        <div class="pl-wrapper">
+                           <div class="content-item">
+                              <div class="title">
+                                 About
+                              </div>
+                              <div class="link">
+                                 <a href="#" class="ga-event">About us</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/points-policy" class="ga-event">Aosom points policy</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/customer-reviews" class="ga-event">Customer reviews</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/wholesale" class="ga-event">Aosom Business</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/influencer" class="ga-event">Aosom Influencer</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/affiliate" class="ga-event">Affiliate Program</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/aosom-story-3" class="ga-event">Aosom Story</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/student-discount" class="ga-event">Student Discount <span>New</span></a>
+                              </div>
+                           </div>
+                           <div class="content-item">
+                              <div class="title">
+                                 Help and support
+                              </div>
+                              <div class="link">
+                                 <a href="/page/contact-us" class="ga-event" data-ga-val="Contact Us">Contact us</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/deliver-home" class="ga-event" data-ga-val="Orders & Delivery">Orders & delivery</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/return-home" class="ga-event" data-ga-val="Returns & Refunds">Returns & refunds</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/tracking" target="_blank" class="ga-event" data-ga-val="Track Your Order" rel="noopener noreferrer">Track your order </a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/terms-home" class="ga-event" data-ga-val="Terms & Conditions">Terms & conditions</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/aosom_faq" class="ga-event" data-ga-val="Shopping FAQs">Shopping FAQs</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/privacy-home" class="ga-event" -ga-key="click_item" data-ga-val="Privacy Policy">Privacy Policy</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/discount-voucher-codes" class="ga-event" data-ga-val="Discount Policy">Discount Policy</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/safe-home" class="ga-event" data-ga-val="Safe Shopping">Safe Shopping Guarantee</a>
+                              </div>
+                           </div>
+                           <div class="content-item">
+                              <div class="title">
+                                 My Account
+                              </div>
+                              <div class="link">
+                                 <a href="/customer/account" onclick="judgeLoginJump(event)" class="ga-event" data-ga-event="aosom_bottom_nav_click_MyAccount" data-ga-val="Sign In">Sign in</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/customer/account/orders" onclick="judgeLoginJump(event)" class="ga-event" data-ga-event="aosom_bottom_nav_click_MyAccount" data-ga-val="My Orders">My orders</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/customer/account/wishlist" onclick="judgeLoginJump(event)" class="ga-event" data-ga-event="aosom_bottom_nav_click_MyAccount" data-ga-val="My Wishlist">My wishlist</a>
+                              </div>
+                              <div class="link">
+                                 <a href="/page/loyalty" class="ga-event" data-ga-event="aosom_bottom_nav_click_MyAccount" data-ga-val="The Aosom Club">The Aosom Club</a>
+                              </div>
+                           </div>
+                           <div class="title mt-5 content-item">
+                              <div class="sub-item payment-method">
+                                 <div class="header text-white">
+                                    Payment methods
+                                 </div>
+                                 <div class="list flex-wrap">
+                                    <div class="li-item">
+                                       <img class="lazy entered " data-src="https://img.aosomcdn.com/upload/payment-icons/VISA-new.svg" alt="visa">
+                                    </div>
+                                    <div class="li-item">
+                                       <img class="lazy entered " data-src="https://img.aosomcdn.com/upload/payment-icons/mastercard-new.svg" alt="mastercard">
+                                    </div>
+                                    <div class="li-item">
+                                       <img class="lazy entered " data-src="https://img.aosomcdn.com/upload/payment-icons/maestro-new.svg" alt="mastercard">
+                                    </div>
+                                    <div class="li-item">
+                                       <img class="lazy entered " data-src="https://img.aosomcdn.com/upload/payment-icons/JCB-new.svg" alt="mastercard">
+                                    </div>
+                                    <div class="li-item">
+                                       <img class="lazy entered " data-src="https://img.aosomcdn.com/upload/payment-icons/paypal-new.svg" alt="mastercard">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-info flex flex-column gap-10 mt-20">
+            <p class="text-center text-white ">
+               0800 240 4050
+            </p>
+            <p class="text-center">
+               <a class="text-center text-white" href="mailto:service@aosom.co.uk">service@aosom.co.uk</a>
+            </p>
+            <p class="text-center text-white ">
+               Customer Service Operating Hours: Monday to Friday. 9:00-17:00
+            </p>
+            <p class="text-center text-white">27 Horsenden Ln S, Perivale, Greenford UB6 7RH United Kingdom</p>
+            <p class="text-center text-white ">
+               © 2012-2022 MHstar UK Ltd. All Rights Reserved. Company Registration Number: 07361121. VAT Number GB 103973325
+            </p>
+         </div>
+      </section>
+   </footer>
+</body>
+<!-- js File -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.lazy.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home - E-commerce Click & Collect</title>
+   <!-- bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <!-- stylesheet -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- responsive -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- swipper -->
+   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+   <!-- font -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link type="image/png" sizes="96x96" rel="icon" href="images/fav_icon.svg">
+</head>
+
+<body class="accounts">
+   <section class="account flex items-center justify-center lazy" data-src="images/login.svg">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="account_container flex items-center flex-column gap-20 justify-center">
+                  <a href="index.html" class="logo flex items-center justify-center text-center">
+                     <img class="lazy" src="images/logo.png" alt="">
+                  </a>
+                  <form class="login form p-15 flex flex-column gap-10">
+                     <h3 class="font-700 text-black pb-10 text-capitalize">sign up</h3>
+                     <div class="login_input pb-5">
+                        <label for="userName" class="text-capitalize pb-5 text-black block font-700">first name</label>
+                        <input type="text" placeholder="Enter your first name" class="px-10 h-40 w-full" required>
+                     </div>
+                     <div class="login_input pb-5">
+                        <label for="userName" class="text-capitalize pb-5 text-black block font-700">last name</label>
+                        <input type="text" placeholder="Enter your last name" class="px-10 h-40 w-full" required>
+                     </div>
+                     <div class="login_input pb-5">
+                        <label for="userName" class="text-capitalize pb-5 text-black block font-700">email</label>
+                        <input type="email" placeholder="Enter your email" class="px-10 h-40 w-full" required>
+                     </div>
+                     <div class="login_input pb-5">
+                        <label for="userName" class="text-capitalize pb-5 text-black block font-700">password</label>
+                        <input type="password" placeholder="Enter your password" class="px-10 h-40 w-full" required>
+                     </div>
+                     <div class="rememeber mb-5 text-capitalize relative flex items-center cursor-pointer justify-between">
+                        <input type="checkbox" id="rem" class="none relative">
+                        <label for="rem" class="px-25 cursor-pointer">remember me</label>
+                     </div>
+                        <input type="submit" value="sign up" class="submit justify-center h-35 flex items-center text-capitalize text-white font-700 px-20 mb-5">
+                     <h5 class="text-center font-600 text-capitalize">Already have an account?
+                     <a href="login.html" class="text-center font-600 text-capitalize underline">log in</a></h5>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
+<!-- js File -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.lazy.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>
