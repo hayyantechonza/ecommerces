@@ -45,7 +45,7 @@ $(function() {
     }
   });
 
-  var swiper = new Swiper('.hero_slider', {
+  var heroSlider = new Swiper('.hero_slider', {
     slidesPerView: 1,
     loop: true,
     grabCursor: true,
@@ -64,4 +64,24 @@ $(function() {
     },
   });
 
+  $(".modal").modal("show");
+
+  var quickViewSlider = new Swiper('.quick_view_slider', {
+    slidesPerView: 1,
+    loop: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 });
