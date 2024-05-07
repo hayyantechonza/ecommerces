@@ -231,6 +231,10 @@ $(function() {
       $this.next('.otp_input').focus();
     }
   });
+
+  $('#liveToastBtn').click(function(){
+      $('#liveToast').toast('show');
+    });
 });
 
 // price range filter

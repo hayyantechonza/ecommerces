@@ -1,0 +1,56 @@
+/*=====================================
+=            Container CSS            =
+=====================================*/
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/*=====  End of Container CSS  ======*/
+
+@media (max-width: 992px) {
+  .header_categories {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .xs-width .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .xs-width .row>* {
+    width: unset;
+  }
+
+  .logo {
+    width: 70px;
+  }
+}
