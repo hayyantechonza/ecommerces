@@ -1,8 +1,6 @@
 // custom code
 $(function() {
   // heading design
-  var splitHeading = $(".hero_banner_title").text().split(" ");
-  $(".hero_banner_title").html(`${splitHeading.slice(0, 2).join(" ")} <span>${splitHeading.slice(2, 5).join(" ")}</span> ${splitHeading.slice(5).join(" ")}`);
 
   $(".dropdown-toggle").mouseover(function() {
     $(this).parent().children(".dropdown-menu").slideDown(100);
@@ -94,6 +92,16 @@ $(function() {
         slidesPerView: 3,
       },
     },
+  });
+
+
+  var heroWrapper = new Swiper('.hero_wrapper', {
+    slidesPerView: 1,
+    loop: true,
+    effect: "fade",
+    spaceBetween: 10,
+    grabCursor: true,
+    speed: 800,
   });
 
   var companiesSlider = new Swiper('.companies_slider', {
