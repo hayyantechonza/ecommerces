@@ -25,7 +25,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_1.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_1.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-01</h5>
@@ -41,7 +41,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_2.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_2.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-02</h5>
@@ -57,7 +57,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_3.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_3.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-03</h5>
@@ -73,7 +73,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_4.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_4.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-04</h5>
@@ -89,7 +89,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_5.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_5.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-05</h5>
@@ -370,236 +370,155 @@
   =            Main            =
   ===========================-->
   <main>
-    <section class="account">
+    <section>
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="heading">
-              <h2 class="heading_title">All orders</h2>
-            </div>
-            <div class="account_wrapper">
-              <div class="account_sidebar">
-                <ul class="account_list">
-                  <li>
-                    <a href="my_account.html">
-                      <i class="ph ph-user-circle"></i>
-                      <span>My account</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="address_book.html">
-                      <i class="ph ph-map-pin"></i>
-                      <span>My address book</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="active" href="orders.html">
-                      <i class="ph ph-shopping-bag"></i>
-                      <span>My orders</span>
-                    </a>
-                  </li>
-                </ul>
+          <div class="col-lg-4">
+            <h4 class="mb-3">Track Your Order</h4>
+            <form action="" method="post">
+              <div class="mb-3">
+                <input type="text" class="form-control" required="" id="order_number" aria-describedby="orderNumberHelp" placeholder="Enter order number">
+                <div id="orderNumberHelp" class="form-text">Please enter your order number.</div>
               </div>
-              <div class="account_main">
-                <div class="account_head">
-                  <h4>All orders</h4>
-                  <form class="form-inline d-md-flex d-none">
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-                      <div class="input-group-append">
-                        <button class="btn btn-primary" type="submit"><i class="ph ph-magnifying-glass"></i></button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="row">
-                  <div class="col-lg-4 mb-3">
-                    <div class="card address_card">
-                      <div class="card-header">Order <a href="#" class="link">#2351921</a></div>
-                      <div class="card-body">
-                        <h5 class="card-title">John Doe</h5>
-                        <p class="card-text">
-                        </p>
-                        <ul class="address_list">
-                          <li>
-                            <i class="ph ph-truck mr-2"></i>
-                            <span>Status: Processing</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-calendar mr-2"></i>
-                            <span>Date: 4 May, 2024</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-coins mr-2"></i>
-                            <span>Price: Rs. 5400</span>
-                          </li>
-                        </ul>
-                        <p></p>
-                        <div class="mt-4">
-                          <a href="#" class="w-100 btn">
-                            <span>View Order</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mb-3">
-                    <div class="card address_card">
-                      <div class="card-header">Order <a href="#" class="link">#2351922</a></div>
-                      <div class="card-body">
-                        <h5 class="card-title">Jane Doe</h5>
-                        <p class="card-text">
-                        </p>
-                        <ul class="address_list">
-                          <li>
-                            <i class="ph ph-truck mr-2"></i>
-                            <span>Status: Delivered</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-calendar mr-2"></i>
-                            <span>Date: 3 May, 2024</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-coins mr-2"></i>
-                            <span>Price: Rs. 7200</span>
-                          </li>
-                        </ul>
-                        <p></p>
-                        <div class="mt-4">
-                          <a href="#" class="w-100 btn">
-                            <span>View Order</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mb-3">
-                    <div class="card address_card">
-                      <div class="card-header">Order <a href="#" class="link">#2351923</a></div>
-                      <div class="card-body">
-                        <h5 class="card-title">Ahmed Khan</h5>
-                        <p class="card-text">
-                        </p>
-                        <ul class="address_list">
-                          <li>
-                            <i class="ph ph-truck mr-2"></i>
-                            <span>Status: Shipped</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-calendar mr-2"></i>
-                            <span>Date: 2 May, 2024</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-coins mr-2"></i>
-                            <span>Price: Rs. 3200</span>
-                          </li>
-                        </ul>
-                        <p></p>
-                        <div class="mt-4">
-                          <a href="#" class="w-100 btn">
-                            <span>View Order</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mb-3">
-                    <div class="card address_card">
-                      <div class="card-header">Order <a href="#" class="link">#2351924</a></div>
-                      <div class="card-body">
-                        <h5 class="card-title">Fatima Ali</h5>
-                        <p class="card-text">
-                        </p>
-                        <ul class="address_list">
-                          <li>
-                            <i class="ph ph-truck mr-2"></i>
-                            <span>Status: Pending</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-calendar mr-2"></i>
-                            <span>Date: 1 May, 2024</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-coins mr-2"></i>
-                            <span>Price: Rs. 4800</span>
-                          </li>
-                        </ul>
-                        <p></p>
-                        <div class="mt-4">
-                          <a href="#" class="w-100 btn">
-                            <span>View Order</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mb-3">
-                    <div class="card address_card">
-                      <div class="card-header">Order <a href="#" class="link">#2351925</a></div>
-                      <div class="card-body">
-                        <h5 class="card-title">Aisha Siddiqui</h5>
-                        <p class="card-text">
-                        </p>
-                        <ul class="address_list">
-                          <li>
-                            <i class="ph ph-truck mr-2"></i>
-                            <span>Status: Delivered</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-calendar mr-2"></i>
-                            <span>Date: 30 April, 2024</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-coins mr-2"></i>
-                            <span>Price: Rs. 6200</span>
-                          </li>
-                        </ul>
-                        <p></p>
-                        <div class="mt-4">
-                          <a href="#" class="w-100 btn">
-                            <span>View Order</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mb-3">
-                    <div class="card address_card">
-                      <div class="card-header">Order <a href="#" class="link">#2351926</a></div>
-                      <div class="card-body">
-                        <h5 class="card-title">Mohammad Ahmed</h5>
-                        <p class="card-text">
-                        </p>
-                        <ul class="address_list">
-                          <li>
-                            <i class="ph ph-truck mr-2"></i>
-                            <span>Status: Processing</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-calendar mr-2"></i>
-                            <span>Date: 29 April, 2024</span>
-                          </li>
-                          <li>
-                            <i class="ph ph-coins mr-2"></i>
-                            <span>Price: Rs. 3800</span>
-                          </li>
-                        </ul>
-                        <p></p>
-                        <div class="mt-4">
-                          <a href="#" class="w-100 btn">
-                            <span>View Order</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <button class="btn btn-primary">
+                <span>Track Order</span>
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-8">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Product Count</th>
+                  <th>Order Date</th>
+                  <th>Price</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12345</td>
+                  <td>3</td>
+                  <td>2024-05-20</td>
+                  <td>$150.00</td>
+                  <td>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#orderModal">
+                      <span>Details</span>
+                    </button>
+                  </td>
+                </tr>
+                <!-- NOT FOUND ORDER ROW -->
+                <!-- <tr>
+                  <td colspan="5">
+                    <h5 class="text-center py-3">Not found your order</h5>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="orderModal">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-capitalize d-flex align-items-center gap-2">
+              <span>Order Details #A235D4587</span>
+              <div class="order_badge">shipping</div>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="order_status">
+              <div class="info">
+                <p>Order Placed:</p>
+                <span>8:00 AM, Feb 8, 2023</span>
+              </div>
+              <div class="info text-center align-items-center">
+                <p>Shipped with:</p>
+                <span>FedEx</span>
+              </div>
+              <div class="info align-items-end">
+                <p>Estimated Delivery:</p>
+                <span>Feb 15, 2023</span>
+              </div>
+            </div>
+            <h6 class="text-uppercase small">Customer information</h6>
+            <table class="table table-borderless table-sm">
+              <tbody>
+                <tr>
+                  <td>Name:</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td>johndoe@example.com</td>
+                </tr>
+                <tr>
+                  <td>Address:</td>
+                  <td>123 Main Street, City, Country</td>
+                </tr>
+                <tr>
+                  <td>Phone:</td>
+                  <td>123-456-7890</td>
+                </tr>
+                <tr>
+                  <td>Payment Method:</td>
+                  <td>Credit Card</td>
+                </tr>
+              </tbody>
+            </table>
+            <h6 class="text-uppercase small">order products</h6>
+            <table class="table table-borderless order_track_products mt-2">
+              <thead class="table-light border">
+                <tr>
+                  <th>Name</th>
+                  <th>Qty.</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="images/products/product_1.webp" alt="Product 1">
+                      <span>Chic Summer Dress</span>
+                    </div>
+                  </td>
+                  <td>10</td>
+                  <td>$20.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="images/products/product_2.webp" alt="Product 2">
+                      <span>Elegant Evening Gown</span>
+                    </div>
+                  </td>
+                  <td>8</td>
+                  <td>$25.00</td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="right">Product Total:</td>
+                  <td>$45.00</td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="right">Shipping cost:</td>
+                  <td>$10.00</td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="right">Total:</td>
+                  <td>$55.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <!--====  End of Main  ====-->
   <!--============================
